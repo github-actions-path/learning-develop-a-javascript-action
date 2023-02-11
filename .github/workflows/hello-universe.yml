@@ -9,4 +9,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: github-actions-path/learning-develop-a-javascript-action@devops
+      #- uses: github-actions-path/learning-develop-a-javascript-action@devops
+      - name: Npm
+        run: |
+          npm install -g @vercel/ncc
+          npm init --yes
+          npm install @actions/core
+          npm install @actions/github
+          npm run build
+          npm run test
