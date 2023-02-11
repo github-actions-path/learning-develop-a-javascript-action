@@ -1,4 +1,4 @@
-# 05_03-develop-a-javascript-action
+# Develop-a-javascript-action
 Use these files to test a JavaScript action.
 
 ## From the GitHub Console...
