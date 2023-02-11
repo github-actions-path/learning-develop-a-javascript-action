@@ -1,0 +1,12 @@
+name: Hello Universe
+on:
+  push:
+    branches: [ devops ]
+  pull_request:
+    branches: [ devops ]
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: github-actions-path/learning-develop-a-javascript-action@devops
